@@ -1,0 +1,23 @@
+=== Alineamiento Local ===
+
+Secuencia 1: ACACACTA
+Secuencia 2: AGCACACA
+
+Score máximo local: 5
+
+Matriz de puntajes con letras:
+    -  A   G   C   A   C   A   C   A 
+ -  0   0   0   0   0   0   0   0   0 
+ A   0   1   0   0   1   0   1   0   1 
+ C   0   0   1   1   0   2   0   2   0 
+ A   0   1   0   1   2   0   3   1   3 
+ C   0   0   1   1   1   3   1   4   2 
+ A   0   1   0   1   2   1   4   2   5 
+ C   0   0   1   1   1   3   2   5   3 
+ T   0   0   0   1   1   1   3   3   5 
+ A   0   1   0   0   2   1   2   3   4 
+
+Alineamientos obtenidos:
+ACACA
+ACACA
+
