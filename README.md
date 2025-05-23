@@ -1,6 +1,6 @@
-# Proyecto Global Alignment by Leon Davis
+# Proyecto Local Alignment by Leon Davis
 
-Este proyecto implementa un alineamiento global de secuencias con manejo de empates y generación de alineamientos óptimos.
+Este proyecto implementa un alineamiento local de secuencias con manejo de scores ceros y alineamientos óptimos.
 
 ---
 
@@ -16,8 +16,8 @@ Este proyecto implementa un alineamiento global de secuencias con manejo de empa
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/LeonDavisCoropuna/GlobalAlignment.git
-cd GlobalAlignment
+git clone https://github.com/LeonDavisCoropuna/LocalAlignment.git
+cd LocalAlignment
 ````
 
 2. Compilar el proyecto:
