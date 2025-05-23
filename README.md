@@ -82,7 +82,7 @@ Define la regla de puntuación entre dos caracteres:
    Selecciona el máximo entre estos tres y cero (porque el alineamiento local no permite puntajes negativos). Actualiza la celda con el puntaje máximo y guarda el antecedente que permitió ese puntaje.
 
 3. **Identificación del puntaje máximo**:  
-   Guarda la celda con el puntaje más alto, que será el final del mejor alineamiento local.
+   Guarda la celda con el puntaje más alto, que será el final del mejor alineamiento local, además se indentifica y actualiza el valor de las posiciones en la cadena para mostrar su ubicación.
 
 4. **Reconstrucción del alineamiento**:  
    Desde la celda con puntaje máximo, sigue la cadena de `Antecedent` hacia atrás mientras el puntaje sea mayor que cero, insertando caracteres o gaps según el movimiento:

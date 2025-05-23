@@ -68,6 +68,11 @@ namespace LocalAlignment
       var alignedS2 = new StringBuilder();
 
       var current = maxCell;
+      int endRow = maxCell.Row;
+      int endCol = maxCell.Column;
+      int startRow = endRow;
+      int startCol = endCol;
+
       while (current != null && current.Score > 0)
       {
         var prev = current.Antecedent;
@@ -91,6 +96,10 @@ namespace LocalAlignment
         }
 
         current = prev;
+        startRow = current.Row;
+        startCol = current.Column;
+        current = prev;
+
       }
 
       // Construir el contenido a guardar
@@ -103,12 +112,15 @@ namespace LocalAlignment
       output.AppendLine();
       output.AppendLine("Score máximo local: " + maxCell.Score);
       output.AppendLine();
+      output.AppendLine($"Posición en Secuencia 1: {startRow} a {endRow - 1}");
+      output.AppendLine($"Posición en Secuencia 2: {startCol} a {endCol - 1}");
+      output.AppendLine();
 
       output.AppendLine("Matriz de puntajes con letras:");
       output.AppendLine(GetMatrixWithLetters(matrix, s1, s2));
 
       output.AppendLine("Alineamientos obtenidos:");
-      foreach (var (a, b) in new List<(string, string)>{(alignedS1.ToString(), alignedS2.ToString())})
+      foreach (var (a, b) in new List<(string, string)> { (alignedS1.ToString(), alignedS2.ToString()) })
       {
         output.AppendLine(a);
         output.AppendLine(b);

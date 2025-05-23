@@ -5,6 +5,9 @@ Secuencia 2: AGCACACA
 
 Score máximo local: 5
 
+Posición en Secuencia 1: 0 a 4
+Posición en Secuencia 2: 3 a 7
+
 Matriz de puntajes con letras:
     -  A   G   C   A   C   A   C   A 
  -  0   0   0   0   0   0   0   0   0 
